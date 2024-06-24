@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rose Cafe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylecontact.css">
+  </head>
+  <body>
+     
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color:  rgba(93, 151, 26, 0.486);font-size: 40px;"><b>Rose</b></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+  
+  
+  
+  
+            <ul class="navbar-nav mr-auto align-content-center " style="padding-top: 10px;" >
+                <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                <li class="nav-item align-content-center" >
+                    <a class="nav-link " href="index.html" ><span class="fa fa-home fa-lg ">Home</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link active" href="about.html">
+                       <span class="fas fa-info fa-lg " > About Us</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="menu.html" ><span class="fa fa-list fa-lg  "  >Menu</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="order.html" ><span class="fa fa-first-order fa-lg " >Order</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link " href="contact.html" >
+                        <span class="fa fa-phone fa-lg " >Contact</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto align-content-center" >
+                <a id="buttonlogin" type="button"  role= "button"    >
+                <span class="fa fa-sign-in fa-lg " ></span>Log In</a>
+            </span> 
+        </div>
+        </div>
+                
+  
+    </nav>
+    
+
+
+
+
+
+    
+    
+     
+  <div class="modal fade" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title" id="myModalTitle" style="color: black;"><em>Log In</em></h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-row">
+                          <div class="form-group col-sm-4 ">
+                              <label class="sr-only" for="email">Email Address</label>
+                              <input type="email" class="form-control form-control-sm mr-1" id="email" placeholder="Enter Email" style="height: 40px;" >
+                              
+  
+                          </div>
+                          <div class="form-group col-sm-6 ">
+                              <label class="sr-only" for="password">password</label>
+                              
+                                        
+                                                
+                                <div class="input-group" id="show_hide_password">
+                                    <input class="form-control" type="password" placeholder="Password">
+                                    
+                                      <button><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></button>
+                                    
+                              </div>
+                            
+                              
+</div>
+                              <div class="col-sm-auto">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label"> Remember me
+                                      </label>
+                                  </div>
+                              </div>
+                      </div>
+                  </form>
+                  <!--Modal content-->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a type="button"   class="btn btn-danger" role="button" id="button">save
+                  </a>
+                 
+            </div>
+    
+            
+          </div>
+      </div>
+    </div>
+    
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="myModal Title">Success!</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body">
+                   <!--Modal content-->
+                   <p>Successfully saved</p>
+               </div>
+              
+       </div>
+   </div>
+   </div>
+   <br><br><br><br>
+   
+        <div class="container">
+   
+            <div class="row">
+             
+             <div class="media">
+                   
+                 <div class="media-body"> 
+                     <div class="col-12 col-sm-8">
+                         <img src="./title-breakfast.png" alt="menu" class="img-fluid"><br>
+                        
+                         <h class="mt-0"> Fresh Start!
+                         </h><br>
+                         <hr  style="color: green;">
+                         <p><b>Bagels</b><br>
+                            Bagel with Cream Cheese…$3.25<br>
+                            <input type="checkbox" name="order" id="order">
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number"  name="quantity" min="1" max="100"><br>
+                            Bagel with Flavored Cream Cheese…$3.75<br>
+                            <input type="checkbox" name="order" id=" order">
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number"  name="quantity" min="1" max="100"><br>
+                            
+                            Avocado, Tomato, & Cream Cheese…$5.50<br>
+                            <input type="checkbox" name="order"  >
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+   <input type="number" name="quantity" min="1" max="100"> <br>
+                            Bacon, Avocado, & Cream Cheese…$6.50<br> 
+                            <input type="checkbox" name="order"  >
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number" name="quantity" min="1" max="100">
+  <br>
+                            
+                            Avocado, 2 Hardboiled Eggs, & Cream Cheese…$8.50<br>
+                            <input type="checkbox" name="order"  >
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+                         <input type="number" name="quantity" min="1" max="100"><br>
+                            
+                           <b> Quiche </b><br>
+                            …Served with Fresh Fruit<br>
+                            Sun Dried Tomato & Spinach…$8.50 <br>
+                            <input type="checkbox" name="order"  >
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number" name="quantity" min="1" max="100"><br>
+                            </p> 
+                     </div>
+                 </div>
+             
+                 <div class=" col-12 col-sm-4  media-right" style="padding-left:140px;">
+                     <img src="./roll.png" alt="menu" class="img-fluid">
+                 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <hr>
+                    <h>Fresh Bakery Case!</h>
+                    <p><b>Baked Fresh Daily.</b><br>
+
+                        Breakfast Pastries
+                        $3.25 – $3.95<br>
+                        <input type="checkbox" name="order"  >
+                        <label for="order" style="color:red; font-size: 15px">For Order</label>
+                        <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number"  name="quantity" min="1" max="100"><br>
+                        
+                        Jumbo Muffins
+                        $3.95<br>
+                        <input type="checkbox" name="order"  >
+                        <label for="order" style="color:red; font-size: 15px">For Order</label>
+                        <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number"  name="quantity" min="1" max="100"><br>
+                        
+                      <b>  Fresh Croissants</b><br>
+                        Almond or Chocolate…$3.95</p>
+                        <input type="checkbox" name="order"  >
+                        <label for="order" style="color:red; font-size: 15px">For Order</label>
+                        <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+  <input type="number" name="quantity" min="1" max="100"><br>
+                        
+                            <button type="button" role="button" class=" btn btn-danger"  >Order</button>
+                            <button type="button" role="button" class=" btn btn-secondary" > <span class="fa fa-shopping-cart" style="padding-right:5px;color: brown;"></span>Add to chart</button>
+                </div>
+            
+            
+            <div class="col-12 col-sm" style="padding-left: 380px;box-sizing: border-box; color: green; "> 
+                <h style="font-size: 20px; color: green;">Header Menu</h>
+                <a href="Breakfastmenu.html" style="color: chocolate; text-decoration: underline;">Breakfast</a><br>
+                <a href="Lunchmenu.html" style="color: chocolate; text-decoration: underline;">Lunch</a><br>
+                <a href="beverages.html" style="color: chocolate; text-decoration: underline;">Beverages</a><br>
+                <a href="order.html" style="color: chocolate; text-decoration: underline;">Order</a>
+            </div>
+            
+</div>
+           </div>
+           </div>
+       
+<br><br>
+
+
+   <footer class="footer" style="padding-top: 30px;">
+                
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-4 col-md-4 align-content-center">
+        <ul>
+            <li>
+                <a ref="index.html" style="color:white;">Home</a>
+            </li>
+            <li>
+                <a href="about.html" style="color:white;">About Us</a>
+            </li>
+            <li>
+                <a href="order.html" style="color:white;">Order</a>
+            </li>
+            <li>
+                <a href="http://google.com" style="color:white;">Help</a>
+            </li>
+        </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 justify-content-center" style="color: black">
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+            <i class="fa fa-envelope fa-lg"></i>: 
+            <a href="mailto:myrose@gmail.com">Rose@food.net</a><br>
+           
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="text-center align-content-center">
+                <a class="btn btn-social-icon btn-google " href="http://google.com/+" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=" target="_blank"><i class="fa fa-facebook fa-lg" ></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o fa-lg"></i></a>
+            </div>
+
+
+        </div>
+    
+    </div>
+        </div>
+       
+           
+         
+     
+ 
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script>
+        $(document).ready(function(){
+            $('#buttonlogin').click(function(){
+            $('#login').modal('show');}
+            )
+        })
+        
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+         $("#show_hide_password button").on('click', function(event) {
+             event.preventDefault();
+             if($('#show_hide_password input').attr("type") == "text"){
+                 $('#show_hide_password input').attr('type', 'password');
+                 $('#show_hide_password i').addClass( "fa-eye-slash" );
+                 $('#show_hide_password i').removeClass( "fa-eye" );
+             }else if($('#show_hide_password input').attr("type") == "password"){
+                 $('#show_hide_password input').attr('type', 'text');
+                 $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                 $('#show_hide_password i').addClass( "fa-eye" );
+             }
+         });
+     });
+</script>     
+<script type="text/javascript">
+    $(document).ready(function() {
+ $("#show_hide_password button").on('click', function(event) {
+     event.preventDefault();
+     if($('#show_hide_password input').attr("type") == "text"){
+         $('#show_hide_password input').attr('type', 'password');
+         $('#show_hide_password i').addClass( "fa-eye-slash" );
+         $('#show_hide_password i').removeClass( "fa-eye" );
+     }else if($('#show_hide_password input').attr("type") == "password"){
+         $('#show_hide_password input').attr('type', 'text');
+         $('#show_hide_password i').removeClass( "fa-eye-slash" );
+         $('#show_hide_password i').addClass( "fa-eye" );
+     }
+ });
+});
+</script>
+
+
+</body>
+</html>

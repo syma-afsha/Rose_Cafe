@@ -1,0 +1,109 @@
+<nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: rgba(85, 26, 151, 0.486);"><b>Rose</b></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+  
+  
+  
+  
+            <ul class="navbar-nav mr-auto align-content-center">
+                <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                <li class="nav-item align-content-center">
+                    <a class="nav-link active" href="index.html" style="color: chocolate;"><span class="fa fa-home fa-lg" >Home</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="about.html"  style="color: chocolate;"><span class="fas fa-info fa-lg" >About Us</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#" style="color: chocolate;"><span class="fa fa-list fa-lg  " >Menu</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="#"  style="color: chocolate"><span class="fa fa-first-order fa-lg" >Order</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link " href="contact.html"  style="color: chocolate;"><span class="fa fa-phone fa-lg" >Contact</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto align-content-center" >
+                <a id="buttonlogin" type="button"  role= "button"  style="color: chocolate;"  >
+                <span class="fa fa-sign-in fa-lg" style="color: chocolate;" ></span>Log In</a>
+            </span> 
+        </div>
+        </div>
+                
+  
+    </nav>
+    
+
+
+
+
+
+    
+    
+     
+  <div class="modal fade" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title" id="myModalTitle" style="color: black;"><em>Log In</em></h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-row">
+                          <div class="form-group col-sm-4 ">
+                              <label class="sr-only" for="email">Email Address</label>
+                              <input type="email" class="form-control form-control-sm mr-1" id="email" placeholder="Enter Email" >
+                              
+  
+                          </div>
+                          <div class="form-group col-sm-4 ">
+                              <label class="sr-only" for="password">password</label>
+                              <input type="password" class="form-control form-control-sm mr-1" id="password" placeholder="Enter password" >
+                              </div>
+                              <div class="col-sm-auto">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label"> Remember me
+                                      </label>
+                                  </div>
+                              </div>
+                      </div>
+                  </form>
+                  <!--Modal content-->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-danger">Save</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+<header class="jumbotron">
+    <div class="row row-header">
+        <div class="d-none d-sm-block col-md-6 align-content-center" style=" padding-right: 40px; padding-top: 20px;">
+            <h1>About Us</h1>
+        </div>
+            <div class="col-sm offset-md-2 col-md-4">
+            <ol class=" breadcrumb " style="background-color: black; padding-top: 40px;">
+                <li class="breadcrumb-item"><a href="./index.html" style="color: blanchedalmond; font-size: 20px;">Home</a></li>
+                <li class="breadcrumb-item active" style="color: blanchedalmond; font-size: 20px;">About Us</li>
+            </ol>
+            
+        
+        </div>
+    </div>
+    
+
+
+
+</header>

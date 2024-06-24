@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rose Cafe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylecontact.css">
+  </head>
+  <body>
+     
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color:  rgba(93, 151, 26, 0.486);font-size: 40px;"><b>Rose</b></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+  
+  
+  
+  
+            <ul class="navbar-nav mr-auto align-content-center " style="padding-top: 10px;" >
+                <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                <li class="nav-item align-content-center" >
+                    <a class="nav-link " href="index.html" ><span class="fa fa-home fa-lg ">Home</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link active" href="about.html">
+                       <span class="fas fa-info fa-lg " > About Us</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="menu.html" ><span class="fa fa-list fa-lg  "  >Menu</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="order.html" ><span class="fa fa-first-order fa-lg " >Order</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link " href="contact.html" >
+                        <span class="fa fa-phone fa-lg " >Contact</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto align-content-center" >
+                <a id="buttonlogin" type="button"  role= "button"    >
+                <span class="fa fa-sign-in fa-lg " ></span>Log In</a>
+            </span> 
+        </div>
+        </div>
+                
+  
+    </nav>
+    
+
+
+
+    
+    
+     
+  <div class="modal fade" id="login" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2 class="modal-title" id="myModalTitle" style="color: black;"><em>Log In</em></h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-row">
+                          <div class="form-group col-sm-4 ">
+                              <label class="sr-only" for="email">Email Address</label>
+                              <input type="email" class="form-control form-control-sm mr-1" id="email" placeholder="Enter Email" style="height: 40px;" >
+                              
+  
+                          </div>
+                          <div class="form-group col-sm-6 ">
+                              <label class="sr-only" for="password">password</label>
+                            
+                                        
+                                                
+                                <div class="input-group" id="show_hide_password">
+                                    <input class="form-control" type="password" placeholder="Password">
+                                    
+                                      <button><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></button>
+                                    
+                              </div>
+                            
+                              
+</div>
+                              <div class="col-sm-auto">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label"> Remember me
+                                      </label>
+                                  </div>
+                              </div>
+                      </div>
+                  </form>
+                  <!--Modal content-->
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a type="button"   class="btn btn-danger" role="button" id="button">save
+                  </a>
+                 
+            </div>
+    
+            
+          </div>
+      </div>
+    </div>
+    
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="myModal Title">Success!</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body">
+                   <!--Modal content-->
+                   <p>Successfully saved</p>
+               </div>
+              
+       </div>
+   </div>
+   </div>
+   <br><br><br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+       <marquee direction="right" class="sticky-top" >
+        <h4 style="color: skyblue; font-size: 30px; font-family: Arial, Helvetica, sans-serif; background-color: rgba(0, 0, 0, 0.493); ">Stay Safe & Healthy </h4>
+       </marquee>
+       </div>
+    </div>
+    <div class="row">
+        <img src="./title-beverages.png" class="img-fluid" alt="" style="padding-bottom: 10px;">
+    </div>
+     <div class="row">
+         <div class="col-12">
+             <div class="card">
+                
+                 <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+                    
+                     <p class="card-text">
+                         <div class="media">
+                             <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                             <img src="./espresso.jpg"  class="mr-3" alt="...">
+                             <div class="media-body">
+                                 <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Espresso <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$10.8</span></h5>
+                                 <p class="d-none d-sm-block">Espresso is a coffee-making method of Italian origin, in which a small amount of nearly boiling water is forced under pressure through finely-ground coffee beans. Espresso coffee can be made with a wide variety of coffee beans and roasts.
+                                 </p>
+                                  <h class="d-none d-sm-block" style="font-size:14px;">  Main ingredient: Ground coffee beans, Nearly boiling water <br>
+                                    Place of origin: Italy<br>
+                                    Serving temperature: Cold, Hot</h>
+                                    <br>
+                                    <input type="checkbox" name="order"  >
+                                    <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                    <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+              <input type="number" name="quantity" min="1" max="100">
+                                 
+                             </div>
+                         </div>
+                     </p>
+                 </div>
+             </div>
+         </div>
+        </div>
+         <div class="row" style="padding-top: 10px;">
+            <div class="col-12">
+                <div class="card" >
+                    <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+                       
+                        <p class="card-text">
+                            <div class="media">
+                                <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                                <img src="./macchiato.jpg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                    <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Macchiato <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$12.8</span></h5>
+                                    <p class="d-none d-sm-block">Caffè macchiato, sometimes called espresso macchiato, is an espresso coffee drink with a small amount of milk, usually foamed. In Italian, macchiato means "stained" or "spotted" so the literal translation of caffè macchiato is "stained” or “marked coffee.”
+                                    </p>
+                                     <h class="d-none d-sm-block" style="font-size:14px;"> Main ingredient: Espresso, Milk <br>
+                                        Serving temperature: Hot <br>
+                                        Country of origin: Italy</h>
+                                        <br>
+                                        <input type="checkbox" name="order"  >
+                                        <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                        <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+                  <input type="number" name="quantity" min="1" max="100">
+                                    
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+     </div>
+     <div class="row" style="padding-top: 10px;">
+        <div class="col-12">
+            <div class="card" >
+                <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+                   
+                    <p class="card-text">
+                        <div class="media">
+                            <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                            <img src="./download (1).jpg" class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Latte <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$11.8</span></h5>
+                                <p class="d-none d-sm-block">Caffe latte is a coffee drink made with espresso and steamed milk. The word comes from the Italian caffè e latte, caffelatte or caffellatte, which means "coffee & milk".
+                                </p>
+                                 <h  class="d-none d-sm-block" style="font-size:14px;"> Main ingredient: Espresso, Milk <br>
+                                    Place of origin: Italy <br>
+                                    Serving temperature: Iced, Hot</h> <br>
+                                    <input type="checkbox" name="order"  >
+                                    <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                    <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+              <input type="number" name="quantity" min="1" max="100">
+                                
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+ </div>
+ <div class="row" style="padding-top: 10px;">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+               
+                <p class="card-text">
+                    <div class="media">
+                        <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                        <img src="./download (2).jpg" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Cappuccino <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$9.8</span></h5>
+                            <p class="d-none d-sm-block">A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam. Variations of the drink involve the use of cream instead of milk, using non-dairy milks, and flavoring with cinnamon or chocolate powder.
+                            </p>
+                             <h class="d-none d-sm-block" style="font-size:14px;"> Main ingredient: Double espresso, Steamed milk foam, Hot milk <br>
+                                Place of origin: Italy <br>
+                                Serving temperature: Iced, Hot</h> <br>
+                                <input type="checkbox" name="order"  >
+                                <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+          <input type="number" name="quantity" min="1" max="100">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+ </div>
+    <div class="row" style="padding-top: 10px;">
+        <div class="col-12">
+            <div class="card" >
+                <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+                   
+                    <p class="card-text">
+                        <div class="media">
+                            <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                            <img src="./download (3).jpg" class="mr-3" alt="...">
+                            <div class="media-body">
+                                <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Mocha <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$10.8</span></h5>
+                                <p class="d-none d-sm-block">A caffè mocha, also called mocaccino, is a chocolate-flavoured variant of a caffè latte. Other commonly used spellings are mochaccino and also mochachino. The name is derived from the city of Mocha, Yemen, which was one of the centers of early coffee trade.
+                                </p>
+                                 <h class="d-none d-sm-block" style="font-size:14px;"> Main ingredient: Milk, Chocolate, Espresso <br>
+                                    Optional ingredient: Cinnamon, Marshmallow, Chantilly cream, Chocolate syrup</h>
+                                <br>
+                                <input type="checkbox" name="order"  >
+                                <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+          <input type="number" name="quantity" min="1" max="100">
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+ </div>
+ <div class="row" style="padding-top: 10px;">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+               
+                <p class="card-text">
+                    <div class="media">
+                        <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                        <img src="./amer.jpg" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Americano <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$8.8</span></h5>
+                            <p class="d-none d-sm-block">Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee. The strength of an Americano varies with the number of shots of espresso and the amount of water added. 
+                            </p>
+                             <h class="d-none d-sm-block" style="font-size:14px;">Main ingredient: Espresso, Hot water <br>
+                                Serving temperature: Hot</h> <br>
+                                <input type="checkbox" name="order"  >
+                                <label for="order" style="color:red; font-size: 15px">For Order</label>
+                                <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+          <input type="number" name="quantity" min="1" max="100">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-top: 10px;">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+               
+                <p class="card-text">
+                    <div class="media">
+                        <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                        <img src="./download (4).jpg" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Flat White <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$7.8</span></h5>
+                            <p class="d-none d-sm-block">A flat white is a coffee drink consisting of espresso with microfoam. It is comparable to a latte, but smaller in volume and with less microfoam, therefore having a higher proportion of coffee to milk.
+                            </p> <br>
+                            <input type="checkbox" name="order"  >
+                            <label for="order" style="color:red; font-size: 15px">For Order</label>
+                            <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+      <input type="number" name="quantity" min="1" max="100">
+                            
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-top: 10px;">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+               
+                <p class="card-text">
+                    <div class="media">
+                        <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                        <img src="./download (5).jpg" class="mr-3" alt="...">
+                        <div class="media-body">
+                            <span class="badge badge-success " style="font-size:20px; height: 30px; width: 70px;">New</span>
+                            <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$5.8</span>
+                            <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Latte Macchiato</h5>
+                            <p class="d-none d-sm-block">Latte macchiato is a coffee beverage; the name means stained or marked milk. Marked as in an espresso stain on the milk used. It is a play on “Espresso macchiato” which is an espresso with a drop or two of milk or cream.
+                            </p>
+                             <h class="d-none d-sm-block" style="font-size:14px;"> Origin:Italy</h> <br>
+                             <input type="checkbox" name="order"  >
+                             <label for="order" style="color:red; font-size: 15px">For Order</label>
+                             <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+       <input type="number" name="quantity" min="1" max="100">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-top: 10px; padding-bottom: 20px;">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body" style="background-color: rgba(233, 170, 125, 0.582);">
+               
+                <p class="card-text">
+                    <div class="media">
+                        <!--tips: add .align-self-center or .align-self-end to the img, to align it in middle or end of the .media-body content-->
+                        <img src="./tea.jpg" class="mr-3" alt="...">
+                        <div class="media-body">
+                            
+                            <h5 class="mt-0" style="color: darkblue; font-family: Arial, Helvetica, sans-serif; font-style: italic;">Tea <span class="badge badge-danger" style="font-size:20px; height: 30px; width: 70px;">$3.8</span></h5>
+                            <p class="d-none d-sm-block">Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub native to East Asia. After water, it is the most widely consumed drink in the world. 
+                            </p>
+                             <h class="d-none d-sm-block" style="font-size:14px;"> Types: Green tea, Black tea, Herbal tea, Oolong, White tea, Fermented tea, Yellow tea ,Lemon tea</h> <br>
+                             <input type="checkbox" name="order"  >
+                             <label for="order" style="color:red; font-size: 15px">For Order</label>
+                             <label for="quantity" style="padding-left: 10px; color: brown;">Quantity:</label>
+       <input type="number" name="quantity" min="1" max="100">
+                            
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<button type="button" role="button" class=" btn btn-danger"  >Order</button>
+<button type="button" role="button" class=" btn btn-secondary" > <span class="fa fa-shopping-cart" style="padding-right:5px;color: brown;"></span>Add to chart</button>
+
+</div>
+
+
+   <footer class="footer" style="background-color: rgba(0, 0, 0, 0.123); margin-top: 10px;">
+                
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-4 col-md-4 align-content-center">
+        <ul>
+            <li>
+                <a ref="index.html" style="color:white;">Home</a>
+            </li>
+            <li>
+                <a href="about.html" style="color:white;">About Us</a>
+            </li>
+            <li>
+                <a href="order.html" style="color:white;">Order</a>
+            </li>
+            <li>
+                <a href="http://google.com" style="color:white;">Help</a>
+            </li>
+        </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 justify-content-center" style="color: black">
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+            <i class="fa fa-envelope fa-lg"></i>: 
+            <a href="mailto:myrose@gmail.com">Rose@food.net</a><br>
+           
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="text-center align-content-center">
+                <a class="btn btn-social-icon btn-google " href="http://google.com/+" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=" target="_blank"><i class="fa fa-facebook fa-lg" ></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o fa-lg"></i></a>
+            </div>
+
+
+        </div>
+    
+    </div>
+        </div>
+       
+           
+         
+     
+ 
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script>
+        $(document).ready(function(){
+            $('#buttonlogin').click(function(){
+            $('#login').modal('show');}
+            )
+        })
+        
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+         $("#show_hide_password button").on('click', function(event) {
+             event.preventDefault();
+             if($('#show_hide_password input').attr("type") == "text"){
+                 $('#show_hide_password input').attr('type', 'password');
+                 $('#show_hide_password i').addClass( "fa-eye-slash" );
+                 $('#show_hide_password i').removeClass( "fa-eye" );
+             }else if($('#show_hide_password input').attr("type") == "password"){
+                 $('#show_hide_password input').attr('type', 'text');
+                 $('#show_hide_password i').removeClass( "fa-eye-slash" );
+                 $('#show_hide_password i').addClass( "fa-eye" );
+             }
+         });
+     });
+</script>     
+
+
+</body>
+</html>

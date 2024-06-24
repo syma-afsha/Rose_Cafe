@@ -1,0 +1,142 @@
+.navbar-brand{
+  
+    font-size: 40px;
+    
+    font-style: italic;
+    font-stretch: inherit;
+    font-weight: 100;
+     content: '\f6af';
+    font-weight: bold;
+    font-family: Font Awesome\ 5 Free;
+  
+  }
+  .modal-content .modal-header{
+    background-color: rgb(148, 71, 16);
+  
+  }
+  .modal-content .modal-header .close{
+    color: whitesmoke;
+  }
+  .modal-content .modal-body{
+    background-color: rgb(207, 135, 40);
+  }
+  .modal-content .modal-footer{
+    background-color: bisque;}
+    .text-center{
+        color: burlywood;
+      }
+      .navbar{
+        height: 60px;
+      }
+      .navbar-dark{
+        background-image: url('./website\ image\(1\).jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+.navbar-nav .nav-item .navbar-text{
+     font-size:  20px;
+     color: chocolate;
+    
+     }
+     .jumbotron {
+       height: 150px;
+       background-color :black;
+       color: blanchedalmond;
+       width: 100%;
+  content: '\f042';
+  font-weight: bold;
+  font-family: Font Awesome\ 5 Free;
+
+position: fixed;
+background-size: cover;
+padding-left:180px;
+
+        }
+        body{
+            height: 100%;
+            background-color: rgb(216, 206, 192);
+          }
+
+    h2{
+      font-size: 30px;
+      padding-left: 40px;
+      content: '\f042';
+      font-weight: bold;
+      font-family: Font Awesome\ 5 Free;;
+      animation: mover .5s infinite;
+      animation-delay: .6s;
+    }
+    .footer p{
+      font-size: 20px;
+      padding-left: 350px;
+      background-attachment: fixed;
+      color: black;
+      align-content: center;
+
+
+    }
+    .footer .row-content li{
+      color: black;
+      background-attachment: fixed;
+      border-radius: 0px;
+      outline: none;
+      
+
+    }
+    .footer   {
+      background-color: rgba(177, 100, 28, 0.527);
+      box-sizing: border-box;
+      height: 100px;
+      color: #dddddd;
+      background-attachment: fixed;
+      z-index: 0;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-position: 0% 0%;
+    justify-content: center;
+      
+    display: flex;
+     width: 100%;
+    height: 100%;
+        
+      }
+      @keyframes mover{
+        0%{
+          text-shadow: black;
+          
+        }
+        100%{
+          text-shadow: black;
+          transform: scaleX(3);
+        }
+
+      }
+    hr{
+      background-color: rgba(61, 155, 61, 0.788);
+      width:100%;
+    }
+      .container h{
+        color: chocolate;
+        font-size: 20px;
+      }
+      h6{
+        font-size: 30px;
+        text-align: center;
+      }
+      a:active , button:active  {
+        background-color: black;}
+        .checked:active{
+          color: yellow;
+        }
+        .fa-star{
+          color: white;
+          padding-left:3px;
+          widows: 20px;
+          height: 30px;
+        }
+       .custom-radio {
+        margin: 10px;        
+      }
+       
+      

@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Rose Cafe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />  -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+     <!-- <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" />  -->
+    <link rel="stylesheet" href="css/fa-stars.css">
+    <link rel="stylesheet" href="stylecontact.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"
+                style="color:  rgba(93, 151, 26, 0.486);font-size: 40px;"><b>Rose</b></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+
+
+
+
+                <ul class="navbar-nav mr-auto align-content-center " style="padding-top: 10px;">
+                    <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link " href="index.html"><span class="fa fa-home fa-lg ">Home</span></a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link active" href="about.html">
+                            <span class="fas fa-info fa-lg "> About Us</span></a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="menu.html"><span class="fa fa-list fa-lg  ">Menu</span></a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link" href="order.html"><span class="fa fa-first-order fa-lg ">Order</span></a>
+                    </li>
+                    <li class="nav-item align-content-center">
+                        <a class="nav-link " href="contact.html">
+                            <span class="fa fa-phone fa-lg ">Contact</span></a>
+                    </li>
+                </ul>
+                <span class="navbar-text ml-auto align-content-center">
+                    <a id="buttonlogin" type="button" role="button">
+                        <span class="fa fa-sign-in fa-lg "></span>Log In</a>
+                </span>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalTitle" style="color: black;"><em>Log In</em></h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4 ">
+                                <label class="sr-only" for="email">Email Address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="email"
+                                    placeholder="Enter Email" style="height: 40px;">
+
+
+                            </div>
+                            <div class="form-group col-sm-6 ">
+                                <label class="sr-only" for="password">password</label>
+
+
+
+                                <div class="input-group" id="show_hide_password">
+                                    <input class="form-control" type="password" placeholder="Password">
+
+                                    <button><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></button>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!--Modal content-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-danger" role="button" id="button">save
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModal Title">Success!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--Modal content-->
+                    <p>Successfully saved</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="container">
+        <marquee behavior="alternate" direction="right"
+            style="font-size: 30px;color : brown ;background-color: rgba(0, 0, 0, 0.041);font-style:italic;">Make
+            Reservation</marquee>
+        <div class="row">
+            <div class="col-12 col-sm">
+                <h6>Reservation Table</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="card">
+                    <!--tips: add .text-center,.text-right to the .card to change card text alignment-->
+
+                    <div class="card-body">
+                        <h class="Reservation Table"></h>
+
+                        <form>
+                            <div class="form group row">
+                                <label for="quantity" class="col-4 col-form-label">Table no.</label>
+
+                                <div class="col-md-3">
+                                    <input type="number" name="quantity" class="form-control" max="20" min="1">
+                                </div>
+                            </div>
+
+                            <div class="form group row">
+                                <label for="Number of Guests" class="col-4 col-form-label">Number of Guests</label>
+
+                                <div class=" col-8">
+<input type="radio" name="number" checked="checked"> 1
+<input type="radio" name="number" checked="checked"> 2
+<input type="radio" name="number" checked="checked"> 3
+<input type="radio" name="number" checked="checked"> 4
+<input type="radio" name="number" checked="checked"> 5
+<input type="radio" name="number" checked="checked"> 6
+<input type="radio" name="number" checked="checked"> 6 or more
+
+                                
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <label for="section" class=" col-md-4 col-form-label">Section</label>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-success">Non-Smoking</button>
+                                    <button type="button" class="btn btn-danger">Smoking</button>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                             
+                      <label for="Date and Time" class="col-md-4 col-form-label">Date and Time</label> 
+                            <div class="col-md-4"> 
+
+
+                             <input type="text"  id="datepicker" name="date" class="form-control">
+
+
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <input type="text" id="timepicker" class="form-control" placeholder="Select time">
+
+
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-success">Reserve</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="mailto:symaafsha80@gmail.com"
+                    style="text-decoration: underline; font-size: 20px;">Online-Order</a>
+            </div>
+        </div>
+        <br>
+
+
+        <div class="row">
+            <div class="col-12">
+                <h style="font-size: 25px; font-style: italic;">Add review about our service:</h>
+                <hr>
+                <div class="card" style="margin-top:20px;">
+                    <!--tips: add .text-center,.text-right to the .card to change card text alignment-->
+
+                    <div class="card-body" style="background-color: rgba(0, 195, 255, 0.199);">
+
+                        <h> Give us your review rating:</h>
+                        <span class="fa fa-star" id="rating1" title="1" aria-hidden="true" ></span>
+                        <span class="fa fa-star" id="rating2" title="2"  aria-hidden="true"></span>
+                        <span class="fa fa-star" id="rating3" title="3" aria-hidden="true"></span>
+                        <span class="fa fa-star" id="rating4" title="4" aria-hidden="true"></span>
+                        <span class="fa fa-star" id="rating5" title="5" aria-hidden="true"></span>
+
+
+                        <hr style=" background-color: yellow;">
+                        <div class="form-group">
+
+                            <label for="textarea" style="color: brown;">Write a comment (Optional)</label>
+                            <input type="textarea" class="form-control " id="textarea" rows="12">
+                            <br>
+
+
+                            <button type="button" class="btn btn-secondary">Submit</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer" style="background-color: rgba(0, 0, 0, 0.123); padding-top: 10px; margin-top: 20px;">
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-sm-4 col-md-4 align-content-center">
+                    <ul>
+                        <li>
+                            <a ref="index.html" style="color:white;">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" style="color:white;">About Us</a>
+                        </li>
+                        <li>
+                            <a href="order.html" style="color:white;">Order</a>
+                        </li>
+                        <li>
+                            <a href="http://google.com" style="color:white;">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 justify-content-center" style="color: black">
+                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                    <i class="fa fa-envelope fa-lg"></i>:
+                    <a href="mailto:myrose@gmail.com">Rose@food.net</a><br>
+
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <div class="text-center align-content-center">
+                        <a class="btn btn-social-icon btn-google " href="http://google.com/+" target="_blank"><i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="
+                            target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"
+                            target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/" target="_blank"><i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:" target="_blank"><i
+                                class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script> -->
+
+    <!-- Include Date Range Picker -->
+    <!-- <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script> -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Include time Range Picker -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="jquery.star-rating.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#buttonlogin').click(function () {
+                $('#login').modal('show');
+            }
+            )
+        })
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#show_hide_password button").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass("fa-eye-slash");
+                    $('#show_hide_password i').removeClass("fa-eye");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass("fa-eye-slash");
+                    $('#show_hide_password i').addClass("fa-eye");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#datepicker').daterangepicker({
+                singleDatePicker: true,
+               locale:{
+                   format: 'DD-MM-YYYY (ddd)'
+               }
+            });
+            // $('#datepicker').datepicker("setDate" ,"dateFormat: dd-mm-yyyy")
+    // dateFormat: 
+// });
+
+
+        })
+
+
+
+
+
+    </script>
+    <!-- <script>
+        $("input[name='radio']:checked").val();
+    </script> -->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#timepicker').timepicker({
+                timeformat: 'hh:mm p',
+                interval: 15,
+                scrollbar: true,
+                minTime: '8',
+                maxTime: '9:00 PM'
+            })
+
+
+
+        })
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#rating1').click(function () {
+                $('#rating1').css('color', 'yellow');
+
+            });
+            $('#rating2').click(function () {
+                $('#rating2,#rating1').css('color', 'yellow');
+
+            });
+            $('#rating3').click(function () {
+                $('#rating3,#rating2,#rating1').css('color', 'yellow');
+
+            });
+            $('#rating4').click(function () {
+                $('#rating4,#rating3,#rating2,#rating1').css('color', 'yellow');
+
+            });
+            $('#rating5').click(function () {
+                $('#rating5,#rating4,#rating3,#rating2,#rating3,#rating1').css('color', 'yellow');
+
+            });
+
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

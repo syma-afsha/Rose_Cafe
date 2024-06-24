@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rose Cafe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylecontact.css">
+  </head>
+  <body>
+     
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color:  rgba(93, 151, 26, 0.486);font-size: 40px;"><b>Rose</b></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+  
+  
+  
+  
+            <ul class="navbar-nav mr-auto align-content-center " style="padding-top: 10px;" >
+                <!--tips: to change the .nav alignment use .justify-content-center,.justify-content-end or use .flex-column to vertical alignment-->
+                <li class="nav-item align-content-center" >
+                    <a class="nav-link " href="index.html" ><span class="fa fa-home fa-lg ">Home</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link active" href="about.html">
+                       <span class="fas fa-info fa-lg " > About Us</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="menu.html" ><span class="fa fa-list fa-lg  "  >Menu</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link" href="order.html" ><span class="fa fa-first-order fa-lg " >Order</span></a>
+                </li>
+                <li class="nav-item align-content-center">
+                    <a class="nav-link " href="contact.html" >
+                        <span class="fa fa-phone fa-lg " >Contact</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text ml-auto align-content-center" >
+                <a id="buttonlogin" type="button"  role= "button"    >
+                <span class="fa fa-sign-in fa-lg " ></span>Log In</a>
+            </span> 
+        </div>
+        </div>
+                
+  
+    </nav>
+    
+
+
+
+  
+  
+   
+<div class="modal fade" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="myModalTitle" style="color: black;"><em>Log In</em></h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4 ">
+                            <label class="sr-only" for="email">Email Address</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="email" placeholder="Enter Email" style="height: 40px;" >
+                            
+
+                        </div>
+                        <div class="form-group col-sm-6 ">
+                            <label class="sr-only" for="password">password</label>
+                            
+                                        
+                                                
+                                <div class="input-group" id= "show_hide_password">
+                                    <input class="form-control" type="password" placeholder="Password">
+                                    
+                                      <button><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></button>
+                                    
+                            
+                              
+                            
+                              
+</div>
+                        </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                </form>
+                <!--Modal content-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a type="button"   class="btn btn-danger" role="button" id="button">save
+                </a>
+               
+          </div>
+  
+          
+        </div>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="myModal Title">Success!</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <!--Modal content-->
+                 <p>Successfully saved</p>
+             </div>
+            
+     </div>
+ </div>
+ </div>
+
+    
+<header class="jumbotron sticky-top">
+  <div class="row row-header">
+      <div class="d-none d-sm-block col-md align-content-center" style=" padding-right: 40px; padding-top: 20px;">
+          
+          <h1>Contact Us</h1>
+          </div>
+      
+      <div class="col-sm-12 offset-md-2 col-md-4">
+          <ol class=" breadcrumb " style="background-color: black; padding-top: 40px; width: 100%;">
+              <li class="breadcrumb-item"><a href="./index.html" style="color: blanchedalmond; font-size: 20px;">Home</a></li>
+              <li class="breadcrumb-item active" style="color: blanchedalmond; font-size: 20px;">Contact Us</li>
+          </ol>
+          
+      
+      </div>
+  </div>
+  
+
+
+
+</header>
+<br><br><br><br><br><br><br>
+<marquee direction="right" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; color: brown; width: 100%; font-weight: 20px; font-style: italic;">Send us your feedback</marquee>
+    
+<div class="row row-content">
+
+    
+
+<div class="col-12 col-sm-8">
+<form>
+<div class="form group">
+<div class="col-2 col-sm-2">
+    <label for="first name">First Name:</label>
+</div>
+     <div class="col-10 col-sm-6">
+    <input type="text" id="first name"  class="form-control" placeholder="Enter first name">
+
+</div>
+</div>
+<div class="form group">
+    <div class="col-2 col-sm-2">
+        <label for="first name">Last Name:</label>
+    </div>
+         <div class="col-10 col-sm-6">
+        <input type="text" id="last name"  class="form-control" placeholder="Enter last name">
+    
+    </div>
+    </div>
+    <div class="form group">
+        <div class="col-2 col-sm-2">
+            <label for="first name">Email:</label>
+        </div>
+             <div class="col-10 col-sm-6">
+            <input type="text" id="Email ID"  class="form-control" placeholder="Enter Email">
+        </div>
+        </div>
+    
+    <div class="form group">
+        <div class="col-2 col-sm-2">
+            <label for="first name">Password:</label>
+        </div>
+             <div class="col-6 col-sm-6">
+                
+                                        
+                                                
+                    <div class="input-group"  id = "show_hide_password">
+                        <input class="form-control" type="password" placeholder="Password">
+                        
+                          <button><i class="fa fa-eye-slash text-dark" aria-hidden="true"></i></button>
+                        
+                  </div>
+                
+                  
+</div>
+        </div>
+        
+        <div class="form group">
+            <div class="col-2 col-sm-2">
+                <label for="telnum">Contact Tel:</label>
+            </div>
+            <div class="input-group">
+                 <div class="col-2 col-sm-2">
+                    <select class="form-control">
+                        <option>+8801</option>
+                        </select>
+                  
+     
+                   
+                        
+                    </div>
+                 
+                    <div class="col-4 col-sm-4">
+                        
+                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                    </div>
+                
+            
+            </div>
+        </div>
+        <div class="form group">
+            <div class="form-row">
+          <div class="checkbox col-5 col-sm-5" >
+          <label class="checkbox-inline" style="padding-left: 30px;">
+            <input type="checkbox" name="approve" value="">
+            <strong>May we contact you?</strong>
+        </label>
+          </div>
+        </div>
+<div class="col-sm-2" >
+    <select class="form-control">
+        <option>Tel.</option>
+        <option>Email</option>
+    </select>
+</div>
+</div>
+<div class="form-group">
+    <label for="feedback" class="col-sm-2 control-label" style="color: brown;">Your Feedback</label>
+    <div class="col-sm-10">
+        <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Send Feedback</button>
+    </div>
+</div>
+
+        
+            
+
+    
+        
+</form>
+</div>
+</div>
+<footer class="footer">
+                
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-4 col-md-4 align-content-center">
+        <ul>
+            <li>
+                <a ref="index.html" style="color:white;">Home</a>
+            </li>
+            <li>
+                <a href="about.html" style="color:white;">About Us</a>
+            </li>
+            <li>
+                <a href="order.html" style="color:white;">Order</a>
+            </li>
+            <li>
+                <a href="http://google.com" style="color:white;">Help</a>
+            </li>
+        </ul>
+        </div>
+        <div class="col-sm-4 col-md-4 justify-content-center" style="color: black">
+            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+            <i class="fa fa-envelope fa-lg"></i>: 
+            <a href="mailto:myrose@gmail.com">Rose@food.net</a><br>
+           
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="text-center align-content-center">
+                <a class="btn btn-social-icon btn-google " href="http://google.com/+" target="_blank"><i class="fa fa-google-plus fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=" target="_blank"><i class="fa fa-facebook fa-lg" ></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o fa-lg"></i></a>
+            </div>
+
+
+        </div>
+    
+    </div>
+        </div>
+       
+           
+         
+     
+ 
+</footer>
+   
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $('#buttonlogin').click(function(){
+          $('#login').modal('show');}
+          )
+      })
+      
+  </script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+     $("#show_hide_password button").on('click', function(event) {
+         event.preventDefault();
+         if($('#show_hide_password input').attr("type") == "text"){
+             $('#show_hide_password input').attr('type', 'password');
+             $('#show_hide_password i').addClass( "fa-eye-slash" );
+             $('#show_hide_password i').removeClass( "fa-eye" );
+         }else if($('#show_hide_password input').attr("type") == "password"){
+             $('#show_hide_password input').attr('type', 'text');
+             $('#show_hide_password i').removeClass( "fa-eye-slash" );
+             $('#show_hide_password i').addClass( "fa-eye" );
+         }
+     });
+ });
+</script> 
+  </body>
+</html>

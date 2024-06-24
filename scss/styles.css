@@ -1,0 +1,126 @@
+.banner {
+  background-image: url("website image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height:900px;
+}
+
+.navbar nav-item {
+  -webkit-text-decoration: blue;
+          text-decoration: blue;
+          letter-spacing: 4px;
+          word-spacing: 4px;
+          
+}
+.main{
+  padding-top:50px;
+  padding-left: 20%;
+}
+.main h1 {
+  font-size: 60px;
+  color: #1f0012;
+  margin: 0px auto;
+  
+  text-align: center;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity:0 ;
+          animation: fadeUp .5s forwards;
+          animation-delay: .5s;
+
+}
+
+.main p {
+  font-size: 20px;
+  color: whitesmoke;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          padding-left:30px;
+          opacity: 0 ;
+          animation: scale .5s forwards;
+          animation-delay: .7s;
+      
+}
+
+.main a {
+  color: yellow;
+  text-decoration: underline;
+
+  font-size: 20px;
+  text-align: center;
+  padding-left: 30%;
+  
+ 
+  
+}
+@keyframes fadeUp{
+  0%{
+    transform: translateY(4rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+@keyframes scale{
+  0%{
+    transform: scale(2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.map{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 90px;
+}
+.footer   {
+background-color: rgba(177, 100, 28, 0.527);
+box-sizing: border-box;
+height: 100px;
+color: #dddddd;
+  
+}
+.footer .row-content li{
+  color: black;
+}
+.text-center{
+  color: burlywood;
+}
+.navbar-brand{
+  
+  
+  
+  font-style: italic;
+  font-stretch: inherit;
+  font-weight: 100;
+   content: '\f6af';
+  font-weight: bold;
+  font-family: Font Awesome\ 5 Free;
+
+}
+.modal-content .modal-header{
+  background-color:  rgb(148, 71, 16);
+
+}
+.modal-content .modal-header .close{
+  color: whitesmoke;
+}
+.modal-content .modal-body{
+  background-color: burlywood;
+}
+.modal-content .modal-footer{
+  background-color: bisque;}
+
+/*# sourceMappingURL=styles.css.map */
+
+body{
+  background-color: burlywood;
+}
